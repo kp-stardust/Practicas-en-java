@@ -1,0 +1,17 @@
+La clase mostrada (diagrama UML) realiza el seguimiento de un sensor de presión en un laboratorio.
+Cuando un objeto sensor es creado utilizando el primer constructor, la presión inicial se 
+setea en cero. Cuando es creado usando el segundo sensor toma el valor del parámetro.
+La presión no debe establecerse a un valor menor a cero. Por lo tanto, si el parámetro de entrada 
+para el método setPresión es un número negativo, la presión no debe cambiarse y debe 
+devolverse un valor de falso. Si la presión se establece exitosamente,
+se devuelve un valor de verdadero.
+(a) Escribir el código para la clase Sensor.
+(b) Desarrollar una clase de prueba para la clase Sensor.
+
+El ejercicio tiene una segunda parte: 
+Se desarrolla una clase SensorSeguro que asegura que la presión nunca supere el valor máximo. 
+El diagrama UML es el siguiente...
+
+La clase SensorSeguro tiene dos constructores. El primero establece el máximo valor seguro para el parámetro dado y el valor de la lectura del sensor a 10.
+El segundo constructor acepta dos parámetros, el primero usado para establecer el máximo valor seguro y el segundo para establecer el valor inicial de la lectura del sensor.
+El método setPresion es redefinido para que sólo valores seguros (no mayores que el máximo valor seguro y no menores a cero) sean establecidos.
